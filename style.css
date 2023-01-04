@@ -1,0 +1,112 @@
+@keyframes color {
+    0% {
+        color: #2982ff;
+        text-shadow: 0px 0px 5px #000;
+    }
+
+    25% {
+        color: #4dff29;
+        text-shadow: 0px 0px 5px #000;
+    }
+
+    50% {
+        color: #cc4343;
+        text-shadow: 0px 0px 5px #ff0000;
+    }
+
+    75% {
+        color: #e2df2f;
+        text-shadow: 0px 0px 5px #ff0000;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+#clock-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    background-color: black;
+    padding: 10px;
+}
+
+#current-time {
+    height: 15%;
+    background-color: black;
+}
+
+h1 {
+    margin-left: 80px;
+    animation: color 10s infinite;
+}
+
+#form-to-set-alarm {
+    height: 15%;
+}
+
+#form1 {
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+#form1 input[type="submit"] {
+    height: 25px;
+}
+
+#alarm-list-container {
+    height: 70%;
+    background-color: gray;
+    border-top: 1px solid white;
+    max-height: 80%;
+    overflow: auto;
+}
+
+#alarm-list {
+    margin-left: 10px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+li div input {
+    background-color: rgb(207, 27, 27);
+    border-radius: 10px;
+}
+
+li div :hover {
+    filter: brightness(200%);
+}
+
+.alarm-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+    height: 30px;
+    padding: 10px;
+}
+
+p {
+    margin-top: -0.1px;
+    font-weight: bold;
+}
+
+#greenBtn {
+    background-color: #00FFFF;
+    font-weight: bold;
+}
+
+#greenBtn:hover {
+    filter: brightness(150%);
+}
+
+li {
+    background-color: white;
+    border-radius: 10px;
+}
+
+h3 {
+    margin-left: 10px;
+}
